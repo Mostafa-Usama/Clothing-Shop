@@ -15,38 +15,55 @@
 
     <body>
 
-        <header>
-            <nav class="navbar navbar-expand-lg bg-white py-3">
-                <div class="container">
-                    <a class="navbar-brand pe-5" href="#">
-                        <img src="images/logo.svg" alt="Bootstrap" width="100">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white py-3">
+            <div class="container">
+                <a class="navbar-brand pe-5 flex-grow-1 flex-lg-grow-0" href="index.html">
+                    <img src="images/logo.svg" alt="Bootstrap" width="100">
+                </a>
+                <div class="mx-3 order-lg-last">
+                    <a href="wishlist.html" class=" position-relative text-decoration-none mx-3">
+                        <img src="images/icon-heart.svg" class="mx-" width="25" alt="">
+                        <span class="position-absolute text-white rounded-circle fw-bold "
+                            style="font-size: 14px; padding: 0px 5px; right: -8px; top: -13px; background-color: var(--primary);">5</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item px-3  fw-bold">
-                                <a class="nav-link selected active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item px-3 fw-bold">
-                                <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
-                            </li>
-                            <li class="nav-item px-3 fw-bold">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item px-3 fw-bold">
-                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <a class="position-relative text-decoration-none me-2" href="cart.html">
+                        <img src="images/icon-cart.svg" width="25" alt="">
+                        <span class="position-absolute text-white rounded-circle fw-bold "
+                            style="font-size: 14px; padding: 0px 5px; right: -8px; top: -13px; background-color: var(--primary);">5</span>
+    
+                    </a>
                 </div>
-            </nav>
-        </header>
-
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+                    <div class=" position-relative order-lg-last mt-3 m-lg-0">
+                        <input type="text" placeholder="Search for something" class="p-2 border rounded"
+                            style="min-width: 250px; width: 100%;">
+                        <img src="images/search.png" class="position-absolute top-50 translate-middle-y"
+                            style="right: 10px;" alt="">
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3  fw-bold">
+                            <a class="nav-link selected active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3 fw-bold">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item px-3 fw-bold">
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-3 fw-bold">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
         <section class="my-5">
             <div class="container">

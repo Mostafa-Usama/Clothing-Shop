@@ -14,7 +14,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(250, 244, 244);
+    background-color: var(--secondery);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -62,11 +62,6 @@ section {
     color: white;
 }
 
-
-.second-text{
-    max-width: 400px;
-    /* margin: auto; */
-}
 .btn{
     color: white;
     background: var(--primary);
@@ -95,8 +90,7 @@ section {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    /* font-size: 15px !important;
-    font-weight: bold !important; */
+
     content: '' !important;
 }
 .swiper-button-prev,
@@ -180,7 +174,7 @@ button.active{
     background-size: cover;
 }
 .bg2{
-    background-image: url(../images/deals-2.png);
+    background-image: url(../images/deals-1.jpg);
     background-size: cover;
     background-position: 70%;
 }
