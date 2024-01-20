@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --primary:rgb(8, 129, 121);
+    --secondery: rgb(231, 231, 231);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(250, 244, 244);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+i {
+    cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(173, 173, 173);
+
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid var(--primary);
+}
+
+input,
+textarea {
+    caret-color: var(--primary);
+    resize: none;
+}
+
+section {
+    margin-top: 70px;
+}
+::selection {
+    background: black;
+    color: white;
+}
+
+
+.second-text{
+    max-width: 400px;
+    /* margin: auto; */
+}
+.btn{
+    color: white;
+    background: var(--primary);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid var(--primary) !important;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--primary);
+}
+.selected,
+.nav-link{
+    transition: .3s;
+}
+.selected,
+.nav-link:hover{
+    color: var(--primary) !important;
+}
+.heading h2{
+    font-weight: bold;
+
+}
+.heading  span{
+    color: var(--primary);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    /* font-size: 15px !important;
+    font-weight: bold !important; */
+    content: '' !important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+
+    position: static !important;
+    font-size: 20px;
+    margin:  5px !important;
+    background-color: var(--secondery) ;
+    border-radius: 50% ;
+    text-align: center;
+    width: 40px !important;
+    height: 40px !important;
+    color: var(--primary) !important;
+}
+
+.products .box{
+    transition: box-shadow .3s ;
+}
+.products .box:hover{
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+}
+.products .box img{
+    transition: 1s;
+}
+.products .box:hover .default {
+    opacity: 0;
+    
+}
+.products .box:hover .hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+    
+}
+.products .box:hover .overlay {
+    opacity: 1 !important;
+
+}
+.icon{
+    position: relative;
+    background-color: var(--secondery) ;
+    color: black ;
+    transition: all .3s;
+}
+
+.products .icon::after{
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    content: attr(aria-label);
+    position: absolute;
+    background-color: var(--primary);
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80%;
+    padding: 6px;
+    white-space: nowrap;
+    font-size: 13px;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    transition: .3s;
+}
+.products .icon:hover::after{
+    bottom: 105%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon:hover {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+button.active{
+    color: var(--primary) !important;
+    background-color: rgb(255, 227, 174);
+}
+
+.bg1{
+    background-image: url(../images/deals-1.jpg);
+    background-size: cover;
+}
+.bg2{
+    background-image: url(../images/deals-2.png);
+    background-size: cover;
+    background-position: 70%;
+}
+.page-link{
+    color: black;
+    background-color: white ;
+}
+.page-link:hover{
+    color: white ;
+    background-color: var(--primary) ;
+}

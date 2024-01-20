@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Shop</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white py-3">
+            <div class="container">
+                <a class="navbar-brand pe-5 flex-grow-1 flex-lg-grow-0" href="#">
+                    <img src="images/logo.svg" alt="Bootstrap" width="100">
+                </a>
+                <div class="mx-3 order-lg-last">
+                    <a href="" class=" position-relative text-decoration-none mx-3">
+                        <img src="images/icon-heart.svg" class="mx-" width="25" alt="">
+                        <span class="position-absolute text-white rounded-circle fw-bold " style="font-size: 14px; padding: 0px 5px; right: -8px; top: -13px; background-color: var(--primary);">5</span>
+                    </a>
+                    <a class="position-relative text-decoration-none me-2" href="" >
+                        <img src="images/icon-cart.svg" width="25" alt="">
+                        <span class="position-absolute text-white rounded-circle fw-bold "
+                        style="font-size: 14px; padding: 0px 5px; right: -8px; top: -13px; background-color: var(--primary);">5</span>
+
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+                    <div class=" position-relative order-lg-last mt-3 m-lg-0">
+                        <input type="text" placeholder="Search for something" class="p-2 border rounded" style="min-width: 250px; width: 100%;">
+                        <img src="images/search.png" class="position-absolute top-50 translate-middle-y" style="right: 10px;" alt="">
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3  fw-bold">
+                            <a class="nav-link selected active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3 fw-bold">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item px-3 fw-bold">
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-3 fw-bold">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="hero" >
+        <div class="container">
+            <div class="row gx-3 gy-4 flex-column flex-md-row justify-content-between align-items-center py-5 ">
+                <div class="col-md-5">
+                    <div>
+                        <p class="fw-bold opacity-75">Hot Promotions</p>
+                        <h1  class="py-2 fw-bold ">Fashion Trending <br> <span style="font-weight:900; color: var(--primary);">Great Collection</span></h1>
+                        <p class="second-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, illum itaque! Laudantium, natus. Laudantium, nihil.</p>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div>
+                        <img src="images/home-img.png" class="img-fluid"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-secondary bg-opacity-10 pb-5">
+        <div class="container">
+            <div class="row align-items-center gx-0 gx-md-4 gy-5" >
+                <div class="col-md-7 ">
+                    <div>
+                        <img src="images/deals-1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 ">
+                    <div class="heading">
+                        <h2> <span>About</span> Us</h2>
+                        <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nobis labore magnam alias saepe perspiciatis nemo porro minus molestiae. Animi, mollitia atque!</p>
+                        <p class="text-secondary"><i class="fas fa-check pe-2" style="color: var(--primary);"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, commodi?</p>
+                        <p class="text-secondary"><i class="fas fa-check pe-2" style="color: var(--primary);"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, commodi?</p>
+                        <p class="text-secondary"><i class="fas fa-check pe-2" style="color: var(--primary);"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, commodi?</p>
+                        <button class="btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container overflow-hidden">
+            <div class="swiper mySwiper overflow-visible">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="heading pb-3">
+                        <h2><span>Popular</span> Catagories</h2>
+                    </div>
+                    <div class="buttons d-flex">
+                        <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div>
+                        <div class="swiper-button-next"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper text-center">
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-1.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">T-shrits</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-2.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">Bags</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-3.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">Sandals</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-4.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">Scarf Caps</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-5.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">Shoes</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-6.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">Pillowcase</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-7.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">Pants</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide p-2 border rounded-3">
+                        <a href="" class="text-black text-decoration-none">
+                            <img src="images/category-8.jpg" class="rounded-3 img-fluid" alt="">
+                            <h5 class="pt-2">Hats</h5>
+                        </a>
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="py-3">
+                <button class="active border-0 text-black me-1 fw-bold rounded" style="width: 100px; height: 45px;">Featured</button>
+                <button class=" border-0 text-black me-1 fw-bold rounded" style="width: 100px; height: 45px;">Popular</button>
+                <button class=" border-0 text-black me-1 fw-bold rounded" style="width: 100px; height: 45px;">New</button>
+               
+            </div>
+            <div class="row gy-5 " id="proContainer">
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                            <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-1-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-1-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-danger text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">Hot</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Grey T-shirt</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                             <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-2-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-2-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-success text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">New</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Colorful T-shirt</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                             <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-3-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-3-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-success text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">New</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Grey Shoes</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                             <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-4-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-4-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-warning text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">Best Sell</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Colorful Pants</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                             <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-5-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-5-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-primary text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">Sale</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Colorful Hat</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                             <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-6-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-6-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-warning text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">Best Sell</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Purple T-shirt</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                             <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-7-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-7-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-primary text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">Sale</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Colorful Dress</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-2  border rounded-4 box">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                             <a href="itemDetails.html" onclick="cloth(event)">
+                                <img src="images/product-8-1.jpg" class="img-fluid rounded-4 default position-relative" alt="">
+                                <img src="images/product-8-2.jpg" class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                            </a>
+                            <div class="position-absolute m-2 bg-danger text-white rounded-5 px-2 top-0 bg-opacity-75" style="font-size: 14px;">Hot</div>
+                            <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay" style="transition: .3s;">
+                                <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                               
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <h5 class=" fw-bold pt-2">Brown T-shirt</h5>
+                            <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <div class="d-flex py-2 justify-content-between align-items-center">
+                                <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>                      
+                                <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="">
+        <div class="container-md">
+            <div class="heading mb-5">
+                <h2><span>Special</span> Events</h2>
+            </div>
+            <div class="row gy-5">
+                <div class="col-lg-6">
+                    <div class=" bg1 p-5">
+                        <h3 style="color: var(--primary); font-weight: bold;">Deal Of The Day</h3>
+                        <p class="text-secondary">Limtied quantities</p>
+
+                        <h5 class="pb-3 text-dark">Summer Collection <br> New Modern Design</h5>
+                        <h6 class="me-2" style="font-weight: 900; color:rgb(245, 61, 61);">$150.00 <span class="text-secondary fw-normal"
+                                style="font-size: 14px;"><del>$200.00</del></span></h6>
+                        <p class="pt-2">Hurry Up! The Offer Ends In:</p>
+                        <div class="d-flex gap-2 text-center">
+                            <div>
+                                <p id="days" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">02</p>
+                                <p>Days</p>
+                            </div>
+                            <div>
+                                <p id="hours" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">22</p>
+                                <p>Hours</p>
+                            </div>
+                            <div>
+                                <p id="mintues" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">57</p>
+                                <p>Mins</p>
+                            </div>
+                            <div>
+                                <p id="seconds" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">32</p>
+                                <p>Secs</p>
+                            </div>
+                        </div>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg2 p-5">
+                        <h3 style="color: var(--primary); font-weight: bold;">Women Clothing</h3>
+                        <p class="text-secondary">Limtied quantities</p>
+
+                        <h5 class="pb-3 text-dark">Try Something New <br> On Vactaion</h5>
+                        <h6 class="me-2" style="font-weight: 900; color:rgb(245, 61, 61);">$180.00 <span class="text-secondary fw-normal"
+                                style="font-size: 14px;"><del>$250.00</del></span></h6>
+                        <p class="pt-2">Hurry Up! The Offer Ends In:</p>
+                        <div class="d-flex gap-2 text-center">
+                            <div>
+                                <p id="days" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">02</p>
+                                <p>Days</p>
+                            </div>
+                            <div>
+                                <p id="hours" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">22</p>
+                                <p>Hours</p>
+                            </div>
+                            <div>
+                                <p id="mintues" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">57</p>
+                                <p>Mins</p>
+                            </div>
+                            <div>
+                                <p id="seconds" class="p-3 mb-2 rounded text-white fw-bold" style="background-color: var(--primary);">32</p>
+                                <p>Secs</p>
+                            </div>
+                        </div>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondary bg-opacity-10 py-5 team">
+        <div class="container">
+            <div class="heading text-center">
+                <h2><span>Team</span> Members</h2>
+            </div>
+            <div class="row gy-5 mt-5 justify-content-center" >
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center shadow">
+                        <div class="position-relative">
+                            <img src="images/team-shape.svg" class="position-absolute" style="bottom: -10px;" alt="">
+                            <img src="images/person_2.jpg" loading="lazy" class="img-fluid " alt="team member">
+                        </div>
+                        <div class=" bg-white p-4 border">
+                            <h3 class="">John Rooster</h3>
+                            <p class="opacity-50">CO-FOUNDER, PRESIDENT</p>
+                            <p class="text-secondary mx m-auto pb-3">Nisi at consequatur unde molestiae quidem provident voluptatum
+                                deleniti quo iste error eos est praesentium distinctio
+                                cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                            <i class="fab fa-facebook-f  rounded-circle bg-secondary icon py-2 mx-1 text-white"
+                                style="padding: 0 11px;"></i>
+                            <i class="fab fa-twitter px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                            <i class="fab fa-linkedin-in px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                            <i class="fab fa-instagram px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center shadow">
+                        <div class="position-relative">
+                            <img src="images/team-shape.svg" class="position-absolute" style="bottom: -10px;" alt="">
+                            <img src="images/person_3.jpg" loading="lazy" class="img-fluid" alt="team member">
+                        </div>
+                        <div class="bg-white border p-4">
+                            <h3 class="">Mark Ethan</h3>
+                            <p class="opacity-50">MARKETING, HR </p>
+                            <p class="text-secondary mx m-auto pb-3">Nisi at consequatur unde molestiae quidem provident voluptatum
+                                deleniti quo iste error eos est praesentium distinctio
+                                cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                            <i class="fab fa-facebook-f  rounded-circle bg-secondary icon py-2 mx-1 text-white"
+                                style="padding: 0 11px;"></i>
+                            <i class="fab fa-twitter px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                            <i class="fab fa-linkedin-in px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                            <i class="fab fa-instagram px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center shadow">
+                        <div class="position-relative">
+                            <img src="images/team-shape.svg" class="position-absolute" style="bottom: -10px;" alt="">
+                            <img src="images/person_4.jpg" loading="lazy" class="img-fluid " alt="team member">
+                        </div>
+                        <div class="bg-white border  p-4">
+                            <h3 class="">Harry Paul</h3>
+                            <p class="opacity-50">DESIGNER, ARTIST</p>
+                            <p class="text-secondary mx m-auto pb-3">Nisi at consequatur unde molestiae quidem provident voluptatum
+                                deleniti quo iste error eos est praesentium distinctio
+                                cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                            <i class="fab fa-facebook-f  rounded-circle bg-secondary icon py-2 mx-1 text-white"
+                                style="padding: 0 11px;"></i>
+                            <i class="fab fa-twitter px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                            <i class="fab fa-linkedin-in px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                            <i class="fab fa-instagram px-2 rounded-circle bg-secondary icon py-2 mx-1 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="background-color: rgb(108, 169, 172);">
+            <div class="container">
+                <div class="row  gy-2 py-4 align-items-center text-center">
+                    <div class="col-md-6 col-lg-3 ">
+                        <img src="images/icon-email.svg" width="50" alt="">
+                        <span class="fw-bold">Sign Up To Newsletter</span>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <span class="fw-bold">And Receive $25 Coupon For Free!</span>
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                        <div class="d-flex ">
+                            <input type="text" class="w-100 p-2">
+                            <button class="border border-black bg-black text-white p-2 px-3 ">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary bg-opacity-10">
+            <div class="container py-5">
+                <div class="row gy-3">
+                    <div class="col-lg-4 col-md-6">
+                        <img class="mb-4" src="images/logo.svg" width="120" alt="">
+                        <p class="mb-2 opacity-75">Contacts:</p>
+                        <h6 class="fw-bold">Address: <span class="fw-normal">562 Wellington Road, Street 32, San Fransisco</span></h6>
+                        <h6 class="fw-bold">Phone: <span class="fw-normal">+01234567890</span></h6>
+                        <h6 class="fw-bold">Hours: <span class="fw-normal">10:00 - 18:00, Mon - Sat</span></h6>
+                        <p class="opacity-75 mt-4">Follow Us</p>
+                        <i class="fab fa-facebook-f  rounded-circle bg-secondary icon py-2 me-1 text-white" style="padding: 0 11px;"></i>
+                        <i class="fab fa-twitter px-2 rounded-circle bg-secondary icon py-2 me-1 text-white"></i>
+                        <i class="fab fa-linkedin-in px-2 rounded-circle bg-secondary icon py-2 me-1 text-white"></i>
+                        <i class="fab fa-instagram px-2 rounded-circle bg-secondary icon py-2 me-1 text-white"></i>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <h5 class="mb-4 fw-bold">Offers</h5>
+                        <ul class=" p-0">
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">About Us</a></li>
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Delivery Information</a></li>
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Terms & Conditions</a></li> 
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Agents</a></li> 
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <h5 class="mb-4 fw-bold">Quick Links</h5>
+                        <ul class=" p-0">
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Support Center</a></li>
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Help</a></li>
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Company</a></li>
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">User's Guide</a></li>
+                            <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Press Info</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="mb-4 fw-bold">Secured Payment Gateways</h5>
+                        <img src="images/payment-method.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/setClothDetails.js"></script>
+
+</body>
+</html>

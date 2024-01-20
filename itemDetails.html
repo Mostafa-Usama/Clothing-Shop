@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing Shop</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg bg-white py-3">
+                <div class="container">
+                    <a class="navbar-brand pe-5" href="#">
+                        <img src="images/logo.svg" alt="Bootstrap" width="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item px-3  fw-bold">
+                                <a class="nav-link selected active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-3 fw-bold">
+                                <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item px-3 fw-bold">
+                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item px-3 fw-bold">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section class="my-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5">
+                        <img src="" class="img-fluid img1" alt="">
+                        <div class="row gx-2 mt-2">
+                            <div class="col-4">
+                                <div class="p-0">
+                                    <img src=""  onclick="changeImg(event)" style="cursor: pointer;" class="img-fluid img2" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-0">
+                                    <img src="" onclick="changeImg(event)" style="cursor: pointer;"  class="img-fluid img1" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-0">
+                                    <img src="" onclick="changeImg(event)" style="cursor: pointer;"  class="img-fluid img2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h3 class="fw-bold mb-4" style="letter-spacing: 1px;">Henley Shirt</h3>
+                        <span>Brand: <span style="color: var(--primary);">Addidas</span></span>
+                        <hr>
+                        <h4 class="me-2 my-3" style="font-weight: 900; color: var(--primary);">$150.00 <span class="text-secondary fw-normal"
+                                style="font-size: 14px;"><del>$200.00</del></span></h4>
+                        <hr>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis magnam esse molestias voluptatum fugiat iste fugit cupiditate expedita officiis obcaecati quibusdam, beatae tenetur dolorum recusandae, distinctio illum, ullam hic?</p>
+                        <div class="my-5">
+                            <p ><i class="fas fa-tshirt pe-2 "></i> Best Material</p>
+                            <p ><i class="fas fa-sync-alt pe-2 "></i> 30 Day Return Policy</p>
+                            <p ><i class="far fa-credit-card pe-2 "></i> Cash On Delivery Available</p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="d-inline-block me-2">Color:</p>
+                            <span class="rounded-circle me-1" style="width: 30px; height: 30px; background-color: rgb(255, 181, 43);"></span>
+                            <span class="rounded-circle me-1" style="width: 30px; height: 30px; background-color: rgb(48, 185, 7);"></span>
+                            <span class="rounded-circle me-1" style="width: 30px; height: 30px; background-color: rgb(255, 108, 235);"></span>
+                            <span class="rounded-circle me-1" style="width: 30px; height: 30px; background-color: rgb(253, 53, 53);"></span>
+                            <span class="rounded-circle me-1" style="width: 30px; height: 30px; background-color: rgb(73, 151, 240);"></span>
+                        </div>
+                        <div class="mt-2 d-flex align-items-center">
+                            <p class="me-2 m-0">Size:</p>
+                            <button class="border text-white mx-1 rounded" style="padding: 5px 14px; background-color: var(--primary);">M</button>
+                            <button class="border text-black bg-white mx-1 rounded icon" style="padding: 5px 14px;">L</button>
+                            <button class="border text-black bg-white mx-1 rounded icon" style="padding: 5px 14px;">XL</button>
+                            <button class="border text-black bg-white mx-1 rounded icon" style="padding: 5px 14px;">XXL</button>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <input type="number" style="width: 60px;" value="1" class="border px-2" name="" id="">
+                            <button class="btn py-2 mx-2 rounded">Add To Cart</button>
+                            <button class="far fa-heart px-3 icon rounded border bg-white"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h4 class="mb-5 fw-bold opacity-75">Reviews(3)</h4>
+                <div>
+                    <div class="d-flex align-items-center gap-4">
+                        <div>
+                            <img src="images/avatar-1.jpg" class="rounded-circle" width="80" alt="avatar">
+                            <h6 class="fw-bold">Simon Paul</h6>
+                        </div>
+                        <div>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <p class="my-2">Thanks you! very fast shipping to Poland. only 3 Days! </p>
+                            <span class="text-secondary">January 18, 2024 at 1:29 am</span>
+                        </div>
+                    </div>
+                    <hr class="opacity-10 mt-4">
+                    <div class="d-flex align-items-center gap-4">
+                        <div>
+                            <img src="images/avatar-2.jpg" class="rounded-circle" width="80" alt="avatar">
+                            <h6 class="text-center fw-bold">Anna Hae</h6>
+                        </div>
+                        <div>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <p class="my-2">Great! Good price and looks good! </p>
+                            <span class="text-secondary">January 18, 2024 at 1:35 am</span>
+                        </div>
+                    </div>
+                    <hr class="opacity-10 mt-4">
+                    <div class="d-flex align-items-center gap-4">
+                        <div >
+                            <img src="images/avatar-3.jpg" class="rounded-circle" width="80" alt="avatar">
+                            <h6 class="text-center fw-bold">John Doe</h6>
+                        </div>
+                        <div>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                            <p class="my-2">Authintic and beautiful! Love it! </p>
+                            <span class="text-secondary">January 18, 2024 at 1:29 am</span>
+                        </div>
+                    </div>
+                    <hr class="opacity-10 mt-4">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container py-2">
+                <h4 class="fw-bold">Add a Review</h4>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <div class="row gy-3 my-3">
+                    <div class="col-md-6">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" class="mt-2 w-100 p-2 border" placeholder="Enter your name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" class="mt-2 w-100 p-2 border" placeholder="Enter your email">
+                    </div>
+                    <div class="col-12">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" class=" mt-2 w-100 border p-2" style="height: 200px;" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn w-100">Submit Review</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="my-5 products">
+            <div class="container">
+                <div class="heading mb-4">
+                    <h2><span>Related</span> Products</h2>
+                </div>
+                    <div class="row gy-5">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="p-2  border rounded-4 box">
+                                <div class="position-relative rounded-4 overflow-hidden">
+                                    <a href="itemDetails.html" onclick="cloth(event)">
+                                        <img src="images/product-11-1.jpg" loading="lazy" class="img-fluid rounded-4 default position-relative" alt="">
+                                        <img src="images/product-11-2.jpg" loading="lazy"
+                                            class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                                    </a>
+                                    <div class="position-absolute m-2 bg-danger text-white rounded-5 px-2 top-0 bg-opacity-75"
+                                        style="font-size: 14px;">Hot</div>
+                                    <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay"
+                                        style="transition: .3s;">
+                                        <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                        <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                    
+                                    </div>
+                    
+                                </div>
+                                <div class="px-2">
+                                    <h5 class=" fw-bold pt-2">Colorful Pants</h5>
+                                    <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <div class="d-flex py-2 justify-content-between align-items-center">
+                                        <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span
+                                                class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>
+                                        <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="p-2  border rounded-4 box">
+                                <div class="position-relative rounded-4 overflow-hidden">
+                                    <a href="itemDetails.html" onclick="cloth(event)">
+                                        <img src="images/product-10-1.jpg" loading="lazy" class="img-fluid rounded-4 default position-relative" alt="">
+                                        <img src="images/product-10-2.jpg" loading="lazy"
+                                            class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                                    </a>
+                                    <div class="position-absolute m-2 bg-success text-white rounded-5 px-2 top-0 bg-opacity-75"
+                                        style="font-size: 14px;">New</div>
+                                    <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay"
+                                        style="transition: .3s;">
+                                        <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                        <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                    
+                                    </div>
+                                </div>
+                                <div class="px-2">
+                                    <h5 class=" fw-bold pt-2">Colorful Sandals</h5>
+                                    <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <div class="d-flex py-2 justify-content-between align-items-center">
+                                        <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span
+                                                class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>
+                                        <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="p-2  border rounded-4 box">
+                                <div class="position-relative rounded-4 overflow-hidden">
+                                    <a href="itemDetails.html" onclick="cloth(event)">
+                                        <img src="images/product-13-1.jpg" loading="lazy" class="img-fluid rounded-4 default position-relative" alt="">
+                                        <img src="images/product-13-2.jpg" loading="lazy"
+                                            class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                                    </a>
+                                    <div class="position-absolute m-2 bg-success text-white rounded-5 px-2 top-0 bg-opacity-75"
+                                        style="font-size: 14px;">New</div>
+                                    <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay"
+                                        style="transition: .3s;">
+                                        <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                        <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                    
+                                    </div>
+                                </div>
+                                <div class="px-2">
+                                    <h5 class=" fw-bold pt-2">Colorful Bag</h5>
+                                    <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <div class="d-flex py-2 justify-content-between align-items-center">
+                                        <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span
+                                                class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>
+                                        <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="p-2  border rounded-4 box">
+                                <div class="position-relative rounded-4 overflow-hidden">
+                                    <a href="itemDetails.html" onclick="cloth(event)">
+                                        <img src="images/product-6-1.jpg" loading="lazy" class="img-fluid rounded-4 default position-relative" alt="">
+                                        <img src="images/product-6-2.jpg" loading="lazy"
+                                            class="img-fluid rounded-4 hover position-absolute top-0 start-0 opacity-0" alt="">
+                                    </a>
+                                    <div class="position-absolute m-2 bg-warning text-white rounded-5 px-2 top-0 bg-opacity-75"
+                                        style="font-size: 14px;">Best Sell</div>
+                                    <div class="w-100 text-center position-absolute top-50 translate-middle-y opacity-0 overlay"
+                                        style="transition: .3s;">
+                                        <i class="far fa-eye fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Favourites"></i>
+                                        <i class="far fa-heart fs-5 mx-2 icon rounded-circle p-2" aria-label="Quick View"></i>
+                    
+                                    </div>
+                                </div>
+                                <div class="px-2">
+                                    <h5 class=" fw-bold pt-2">Purple T-shirt</h5>
+                                    <p class="text-secondary">Lorem, ipsum dolor sit amet conselit. Laudantium, harum.</p>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <i class="fas fa-star" style="color: gold; font-size: 13px;"></i>
+                                    <div class="d-flex py-2 justify-content-between align-items-center">
+                                        <h6 class="me-2" style="font-weight: 900; color: var(--primary);">$150.00 <span
+                                                class="text-secondary fw-normal" style="font-size: 14px;"><del>$200.00</del></span></h6>
+                                        <i class="fas fa-shopping-bag fs-5 mx-2 icon rounded-circle p-2" aria-label="Add To Cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>    
+        </section>
+
+        <footer>
+            <div style="background-color: rgb(108, 169, 172);">
+                <div class="container">
+                    <div class="row  gy-2 py-4 align-items-center text-center">
+                        <div class="col-md-6 col-lg-3 ">
+                            <img src="images/icon-email.svg" width="50" alt="">
+                            <span class="fw-bold">Sign Up To Newsletter</span>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <span class="fw-bold">And Receive $25 Coupon For Free!</span>
+                        </div>
+                        <div class="col-md-12 col-lg-5">
+                            <div class="d-flex ">
+                                <input type="text" class="w-100 p-2">
+                                <button class="border border-black bg-black text-white p-2 px-3 ">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary bg-opacity-10">
+                <div class="container py-5">
+                    <div class="row gy-3">
+                        <div class="col-lg-4 col-md-6">
+                            <img class="mb-4" src="images/logo.svg" width="120" alt="">
+                            <p class="mb-2 opacity-75">Contacts:</p>
+                            <h6 class="fw-bold">Address: <span class="fw-normal">562 Wellington Road, Street 32, San
+                                    Fransisco</span></h6>
+                            <h6 class="fw-bold">Phone: <span class="fw-normal">+01234567890</span></h6>
+                            <h6 class="fw-bold">Hours: <span class="fw-normal">10:00 - 18:00, Mon - Sat</span></h6>
+                            <p class="opacity-75 mt-4">Follow Us</p>
+                            <i class="fab fa-facebook-f  rounded-circle bg-secondary icon py-2 me-1 text-white"
+                                style="padding: 0 11px;"></i>
+                            <i class="fab fa-twitter px-2 rounded-circle bg-secondary icon py-2 me-1 text-white"></i>
+                            <i
+                                class="fab fa-linkedin-in px-2 rounded-circle bg-secondary icon py-2 me-1 text-white"></i>
+                            <i class="fab fa-instagram px-2 rounded-circle bg-secondary icon py-2 me-1 text-white"></i>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <h5 class="mb-4 fw-bold">Offers</h5>
+                            <ul class=" p-0">
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">About
+                                        Us</a></li>
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Delivery
+                                        Information</a></li>
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Privacy
+                                        Policy</a></li>
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Terms &
+                                        Conditions</a></li>
+                                <li><a href=""
+                                        class="my-2 d-inline-block text-secondary text-decoration-none">Agents</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <h5 class="mb-4 fw-bold">Quick Links</h5>
+                            <ul class=" p-0">
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Support
+                                        Center</a></li>
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Help</a>
+                                </li>
+                                <li><a href=""
+                                        class="my-2 d-inline-block text-secondary text-decoration-none">Company</a></li>
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">User's
+                                        Guide</a>
+                                </li>
+                                <li><a href="" class="my-2 d-inline-block text-secondary text-decoration-none">Press
+                                        Info</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <h5 class="mb-4 fw-bold">Secured Payment Gateways</h5>
+                            <img src="images/payment-method.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/getClothDetails.js"></script>
+        <script src="js/setClothDetails.js"></script>
+
+    </body>
+
+</html>
