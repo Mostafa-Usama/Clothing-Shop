@@ -186,3 +186,20 @@ button.active{
     color: white ;
     background-color: var(--primary) ;
 }
+
+.hero{
+    background-image: url(../images/Huck-Autumn-23-04.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
